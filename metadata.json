@@ -1,0 +1,5 @@
+{
+  "name": "物料管理系统",
+  "description": "一个功能齐全的物料管理系统，包含实时库存追踪、历史变动查询、报表导出及操作审计。支持Excel导入导出与数据看板。",
+  "requestFramePermissions": []
+}

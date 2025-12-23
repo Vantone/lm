@@ -1,0 +1,2232 @@
+{
+  "backupInfo": {
+    "timestamp": "2025-12-23T16:42:55.979Z",
+    "version": "1.0.0",
+    "description": "手动备份: ���Ա���",
+    "originalSize": 56499
+  },
+  "data": {
+    "materials": [
+      {
+        "id": "import-1766506019908-0",
+        "name": "餐巾纸(40袋/箱)",
+        "unit": "BAG",
+        "spec": "袋",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-1",
+        "name": "喜鼎饺子盒（不带格）",
+        "unit": "CS",
+        "spec": "箱",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-2",
+        "name": "保温馄饨烫菜盒",
+        "unit": "CS",
+        "spec": "1箱/4袋",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-3",
+        "name": "酱骨盒",
+        "unit": "CS",
+        "spec": "箱",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-4",
+        "name": "喜家德三件套",
+        "unit": "CS",
+        "spec": "箱",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-5",
+        "name": "喜鼎汤杯（50套/袋）",
+        "unit": "CS",
+        "spec": "箱",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-6",
+        "name": "喜鼎隔层",
+        "unit": "CS",
+        "spec": "箱",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-7",
+        "name": "喜鼎保温小袋（1包200）",
+        "unit": "PAK",
+        "spec": "包",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-8",
+        "name": "喜鼎餐巾纸（48袋/箱）",
+        "unit": "CS",
+        "spec": "箱",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-9",
+        "name": "喜鼎打包袋（500个/箱）",
+        "unit": "PAK",
+        "spec": "包",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-10",
+        "name": "厨房用纸",
+        "unit": "CS",
+        "spec": "箱",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-11",
+        "name": "喜鼎湿巾（300条/箱",
+        "unit": "CS",
+        "spec": "箱",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-12",
+        "name": "豆花布丁杯（300套/箱）",
+        "unit": "TAO",
+        "spec": "套",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-13",
+        "name": "喜鼎001餐盘（50套/箱）",
+        "unit": "CS",
+        "spec": "箱",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-14",
+        "name": "外卖红袋320(50个/袋)",
+        "unit": "BAG",
+        "spec": "袋",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-15",
+        "name": "塑料瓶240毫升/1箱10包",
+        "unit": "CS",
+        "spec": "1箱10包",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-16",
+        "name": "喜庆日饺子盖（15格/50个）",
+        "unit": "CS",
+        "spec": "箱",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-17",
+        "name": "外卖红袋250(6袋/箱)",
+        "unit": "BAG",
+        "spec": "袋",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-18",
+        "name": "双层饺子子盒(餐合#内村)",
+        "unit": "CS",
+        "spec": "箱",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-19",
+        "name": "喜庆日饺子盘底（21格/50个）",
+        "unit": "CS",
+        "spec": "箱",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-20",
+        "name": "喜家德湿巾（10包/箱）",
+        "unit": "PAK",
+        "spec": "包",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-21",
+        "name": "单格酱料盒",
+        "unit": "PAK",
+        "spec": "包",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-22",
+        "name": "一次性勺子（10袋/箱）",
+        "unit": "BAG",
+        "spec": "袋",
+        "category": "其他",
+        "tags": "喜家德用品库"
+      },
+      {
+        "id": "import-1766506019908-23",
+        "name": "普通唐带",
+        "unit": "ROL",
+        "spec": "卷",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-24",
+        "name": "拖布夹",
+        "unit": "EA",
+        "spec": "个",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-25",
+        "name": "拖把头",
+        "unit": "EA",
+        "spec": "个",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-26",
+        "name": "白标彩贴车间用",
+        "unit": "ROL",
+        "spec": "卷",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-27",
+        "name": "防水碳带",
+        "unit": "ROL",
+        "spec": "卷",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-28",
+        "name": "彩色碳带",
+        "unit": "ROL",
+        "spec": "卷",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-29",
+        "name": "白色标签",
+        "unit": "ROL",
+        "spec": "卷",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-30",
+        "name": "彩色标签",
+        "unit": "ROL",
+        "spec": "卷",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-31",
+        "name": "蓝带手",
+        "unit": "TIA",
+        "spec": "条",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-32",
+        "name": "白带手",
+        "unit": "TIA",
+        "spec": "条",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-33",
+        "name": "红胶皮手套",
+        "unit": "FU",
+        "spec": "付",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-34",
+        "name": "白标店用",
+        "unit": "ZU",
+        "spec": "组",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-35",
+        "name": "套袖",
+        "unit": "FU",
+        "spec": "付",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-36",
+        "name": "南瓜喜家德贴",
+        "unit": "ROL",
+        "spec": "卷",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-37",
+        "name": "围裙",
+        "unit": "EA",
+        "spec": "个",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-38",
+        "name": "小白标签纸",
+        "unit": "ROL",
+        "spec": "卷",
+        "category": "其他",
+        "tags": "标签纸类目"
+      },
+      {
+        "id": "import-1766506019908-39",
+        "name": "喜鼎白带手",
+        "unit": "TIA",
+        "spec": "条",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-40",
+        "name": "喜鼎白方带手",
+        "unit": "TIA",
+        "spec": "条",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-41",
+        "name": "一次性口罩(1箱40盒）",
+        "unit": "HE",
+        "spec": "盒",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-42",
+        "name": "蓝标带手",
+        "unit": "TIA",
+        "spec": "条",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-43",
+        "name": "垃圾袋",
+        "unit": "PAK",
+        "spec": "包",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-44",
+        "name": "标签打印纸",
+        "unit": "ROL",
+        "spec": "卷",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-45",
+        "name": "厕纸",
+        "unit": "CS",
+        "spec": "箱",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-46",
+        "name": "打印纸",
+        "unit": "PAK",
+        "spec": "包",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-47",
+        "name": "牙签",
+        "unit": "HE",
+        "spec": "盒",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-48",
+        "name": "鞋套",
+        "unit": "PAK",
+        "spec": "包",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-49",
+        "name": "一次性筷子",
+        "unit": "PAK",
+        "spec": "包",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-50",
+        "name": "一次性蓝 手套（1箱10盒）",
+        "unit": "HE",
+        "spec": "盒",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-51",
+        "name": "保鲜膜-300",
+        "unit": "ROL",
+        "spec": "卷",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-52",
+        "name": "保鲜膜（1箱30卷）",
+        "unit": "ROL",
+        "spec": "卷",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-53",
+        "name": "保鲜袋",
+        "unit": "PAK",
+        "spec": "包",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-54",
+        "name": "保鲜膜-450",
+        "unit": "ROL",
+        "spec": "卷",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-55",
+        "name": "喜小袋",
+        "unit": "KUN",
+        "spec": "捆",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-56",
+        "name": "保鲜膜-60",
+        "unit": "EA",
+        "spec": "个",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-57",
+        "name": "一次性蓝手套（1箱20盒）",
+        "unit": "HE",
+        "spec": "盒",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-58",
+        "name": "一次性手套",
+        "unit": "PAK",
+        "spec": "包",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-59",
+        "name": "一次性网帽（1箱10包）",
+        "unit": "PAK",
+        "spec": "包",
+        "category": "其他",
+        "tags": "一次性用品库"
+      },
+      {
+        "id": "import-1766506019908-60",
+        "name": "泡沫消毒凝胶（1箱6瓶）",
+        "unit": "PIN",
+        "spec": "瓶",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-61",
+        "name": "威猛",
+        "unit": "PIN",
+        "spec": "瓶",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-62",
+        "name": "柠檬除胶剂",
+        "unit": "PIN",
+        "spec": "瓶",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-63",
+        "name": "托普4L清除剂",
+        "unit": "PIN",
+        "spec": "瓶",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-64",
+        "name": "k202去渍粉",
+        "unit": "GUAN",
+        "spec": "罐",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-65",
+        "name": "k102水垢清除剂（1箱48袋）",
+        "unit": "BAG",
+        "spec": "袋",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-66",
+        "name": "A305消毒剂",
+        "unit": "PIN",
+        "spec": "瓶",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-67",
+        "name": "菌清洗手液",
+        "unit": "PIN",
+        "spec": "瓶",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-68",
+        "name": "酒精块（1箱8袋）",
+        "unit": "BAG",
+        "spec": "袋",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-69",
+        "name": "菌清消毒凝胶",
+        "unit": "PIN",
+        "spec": "瓶",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-70",
+        "name": "酸性洗洁剂",
+        "unit": "TOG",
+        "spec": "桶",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-71",
+        "name": "碱性洗洁剂",
+        "unit": "TOG",
+        "spec": "桶",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-72",
+        "name": "酒精",
+        "unit": "PIN",
+        "spec": "瓶",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-73",
+        "name": "洗洁精",
+        "unit": "TOG",
+        "spec": "桶",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-74",
+        "name": "拉丝布",
+        "unit": "ROL",
+        "spec": "卷",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-75",
+        "name": "柯百达",
+        "unit": "PIN",
+        "spec": "瓶",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-76",
+        "name": "连体酱料杯",
+        "unit": "PAK",
+        "spec": "包",
+        "category": "其他",
+        "tags": "日化品类目"
+      },
+      {
+        "id": "import-1766506019908-77",
+        "name": "胶带",
+        "unit": "ROL",
+        "spec": "卷",
+        "category": "其他",
+        "tags": "日化品类目"
+      }
+    ],
+    "records": [
+      {
+        "id": "rec-import-1766506019908-0-2025-12-23",
+        "materialId": "import-1766506019908-0",
+        "date": "2025-12-23",
+        "yesterdayStock": 9520,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 12,
+        "currentStock": 9508
+      },
+      {
+        "id": "rec-import-1766506019908-1-2025-12-23",
+        "materialId": "import-1766506019908-1",
+        "date": "2025-12-23",
+        "yesterdayStock": 21,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 2,
+        "currentStock": 19
+      },
+      {
+        "id": "rec-import-1766506019908-2-2025-12-23",
+        "materialId": "import-1766506019908-2",
+        "date": "2025-12-23",
+        "yesterdayStock": 36,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 4,
+        "currentStock": 32
+      },
+      {
+        "id": "rec-import-1766506019908-3-2025-12-23",
+        "materialId": "import-1766506019908-3",
+        "date": "2025-12-23",
+        "yesterdayStock": 113,
+        "todayIn": 39,
+        "workshopOut": 0,
+        "storeOut": 13,
+        "currentStock": 139
+      },
+      {
+        "id": "rec-import-1766506019908-4-2025-12-23",
+        "materialId": "import-1766506019908-4",
+        "date": "2025-12-23",
+        "yesterdayStock": 38,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 38
+      },
+      {
+        "id": "rec-import-1766506019908-5-2025-12-23",
+        "materialId": "import-1766506019908-5",
+        "date": "2025-12-23",
+        "yesterdayStock": 16,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 16
+      },
+      {
+        "id": "rec-import-1766506019908-6-2025-12-23",
+        "materialId": "import-1766506019908-6",
+        "date": "2025-12-23",
+        "yesterdayStock": 14,
+        "todayIn": 10,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 24
+      },
+      {
+        "id": "rec-import-1766506019908-7-2025-12-23",
+        "materialId": "import-1766506019908-7",
+        "date": "2025-12-23",
+        "yesterdayStock": 16,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 16
+      },
+      {
+        "id": "rec-import-1766506019908-8-2025-12-23",
+        "materialId": "import-1766506019908-8",
+        "date": "2025-12-23",
+        "yesterdayStock": 41,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 41
+      },
+      {
+        "id": "rec-import-1766506019908-9-2025-12-23",
+        "materialId": "import-1766506019908-9",
+        "date": "2025-12-23",
+        "yesterdayStock": 22,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 1,
+        "currentStock": 21
+      },
+      {
+        "id": "rec-import-1766506019908-10-2025-12-23",
+        "materialId": "import-1766506019908-10",
+        "date": "2025-12-23",
+        "yesterdayStock": 98,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 98
+      },
+      {
+        "id": "rec-import-1766506019908-11-2025-12-23",
+        "materialId": "import-1766506019908-11",
+        "date": "2025-12-23",
+        "yesterdayStock": 44,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 5,
+        "currentStock": 39
+      },
+      {
+        "id": "rec-import-1766506019908-12-2025-12-23",
+        "materialId": "import-1766506019908-12",
+        "date": "2025-12-23",
+        "yesterdayStock": 29700,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 780,
+        "currentStock": 28920
+      },
+      {
+        "id": "rec-import-1766506019908-13-2025-12-23",
+        "materialId": "import-1766506019908-13",
+        "date": "2025-12-23",
+        "yesterdayStock": 3,
+        "todayIn": 32,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 35
+      },
+      {
+        "id": "rec-import-1766506019908-14-2025-12-23",
+        "materialId": "import-1766506019908-14",
+        "date": "2025-12-23",
+        "yesterdayStock": 374,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 11,
+        "currentStock": 363
+      },
+      {
+        "id": "rec-import-1766506019908-15-2025-12-23",
+        "materialId": "import-1766506019908-15",
+        "date": "2025-12-23",
+        "yesterdayStock": 495,
+        "todayIn": 0,
+        "workshopOut": 2,
+        "storeOut": 7,
+        "currentStock": 486
+      },
+      {
+        "id": "rec-import-1766506019908-16-2025-12-23",
+        "materialId": "import-1766506019908-16",
+        "date": "2025-12-23",
+        "yesterdayStock": 2,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 2
+      },
+      {
+        "id": "rec-import-1766506019908-17-2025-12-23",
+        "materialId": "import-1766506019908-17",
+        "date": "2025-12-23",
+        "yesterdayStock": 1630,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 30,
+        "currentStock": 1600
+      },
+      {
+        "id": "rec-import-1766506019908-18-2025-12-23",
+        "materialId": "import-1766506019908-18",
+        "date": "2025-12-23",
+        "yesterdayStock": 221,
+        "todayIn": 410,
+        "workshopOut": 0,
+        "storeOut": 24,
+        "currentStock": 607
+      },
+      {
+        "id": "rec-import-1766506019908-19-2025-12-23",
+        "materialId": "import-1766506019908-19",
+        "date": "2025-12-23",
+        "yesterdayStock": 2,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 2
+      },
+      {
+        "id": "rec-import-1766506019908-20-2025-12-23",
+        "materialId": "import-1766506019908-20",
+        "date": "2025-12-23",
+        "yesterdayStock": 326,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 9,
+        "currentStock": 317
+      },
+      {
+        "id": "rec-import-1766506019908-21-2025-12-23",
+        "materialId": "import-1766506019908-21",
+        "date": "2025-12-23",
+        "yesterdayStock": 142,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 7,
+        "currentStock": 135
+      },
+      {
+        "id": "rec-import-1766506019908-22-2025-12-23",
+        "materialId": "import-1766506019908-22",
+        "date": "2025-12-23",
+        "yesterdayStock": 426,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 15,
+        "currentStock": 411
+      },
+      {
+        "id": "rec-import-1766506019908-23-2025-12-23",
+        "materialId": "import-1766506019908-23",
+        "date": "2025-12-23",
+        "yesterdayStock": 5,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 5
+      },
+      {
+        "id": "rec-import-1766506019908-24-2025-12-23",
+        "materialId": "import-1766506019908-24",
+        "date": "2025-12-23",
+        "yesterdayStock": 5,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 5
+      },
+      {
+        "id": "rec-import-1766506019908-25-2025-12-23",
+        "materialId": "import-1766506019908-25",
+        "date": "2025-12-23",
+        "yesterdayStock": 13,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 1,
+        "currentStock": 12
+      },
+      {
+        "id": "rec-import-1766506019908-26-2025-12-23",
+        "materialId": "import-1766506019908-26",
+        "date": "2025-12-23",
+        "yesterdayStock": 29,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 29
+      },
+      {
+        "id": "rec-import-1766506019908-27-2025-12-23",
+        "materialId": "import-1766506019908-27",
+        "date": "2025-12-23",
+        "yesterdayStock": 16,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 16
+      },
+      {
+        "id": "rec-import-1766506019908-28-2025-12-23",
+        "materialId": "import-1766506019908-28",
+        "date": "2025-12-23",
+        "yesterdayStock": 32,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 32
+      },
+      {
+        "id": "rec-import-1766506019908-29-2025-12-23",
+        "materialId": "import-1766506019908-29",
+        "date": "2025-12-23",
+        "yesterdayStock": 26,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 26
+      },
+      {
+        "id": "rec-import-1766506019908-30-2025-12-23",
+        "materialId": "import-1766506019908-30",
+        "date": "2025-12-23",
+        "yesterdayStock": 98,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 2,
+        "currentStock": 96
+      },
+      {
+        "id": "rec-import-1766506019908-31-2025-12-23",
+        "materialId": "import-1766506019908-31",
+        "date": "2025-12-23",
+        "yesterdayStock": 352,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 2,
+        "currentStock": 350
+      },
+      {
+        "id": "rec-import-1766506019908-32-2025-12-23",
+        "materialId": "import-1766506019908-32",
+        "date": "2025-12-23",
+        "yesterdayStock": 551,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 20,
+        "currentStock": 531
+      },
+      {
+        "id": "rec-import-1766506019908-33-2025-12-23",
+        "materialId": "import-1766506019908-33",
+        "date": "2025-12-23",
+        "yesterdayStock": 41,
+        "todayIn": 50,
+        "workshopOut": 0,
+        "storeOut": 14,
+        "currentStock": 77
+      },
+      {
+        "id": "rec-import-1766506019908-34-2025-12-23",
+        "materialId": "import-1766506019908-34",
+        "date": "2025-12-23",
+        "yesterdayStock": 89,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 13,
+        "currentStock": 76
+      },
+      {
+        "id": "rec-import-1766506019908-35-2025-12-23",
+        "materialId": "import-1766506019908-35",
+        "date": "2025-12-23",
+        "yesterdayStock": 5,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 3,
+        "currentStock": 2
+      },
+      {
+        "id": "rec-import-1766506019908-36-2025-12-23",
+        "materialId": "import-1766506019908-36",
+        "date": "2025-12-23",
+        "yesterdayStock": 54,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 54
+      },
+      {
+        "id": "rec-import-1766506019908-37-2025-12-23",
+        "materialId": "import-1766506019908-37",
+        "date": "2025-12-23",
+        "yesterdayStock": 7,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 4,
+        "currentStock": 3
+      },
+      {
+        "id": "rec-import-1766506019908-38-2025-12-23",
+        "materialId": "import-1766506019908-38",
+        "date": "2025-12-23",
+        "yesterdayStock": 40,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 40
+      },
+      {
+        "id": "rec-import-1766506019908-39-2025-12-23",
+        "materialId": "import-1766506019908-39",
+        "date": "2025-12-23",
+        "yesterdayStock": 2459,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 3,
+        "currentStock": 2456
+      },
+      {
+        "id": "rec-import-1766506019908-40-2025-12-23",
+        "materialId": "import-1766506019908-40",
+        "date": "2025-12-23",
+        "yesterdayStock": 500,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 500
+      },
+      {
+        "id": "rec-import-1766506019908-41-2025-12-23",
+        "materialId": "import-1766506019908-41",
+        "date": "2025-12-23",
+        "yesterdayStock": 318,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 6,
+        "currentStock": 312
+      },
+      {
+        "id": "rec-import-1766506019908-42-2025-12-23",
+        "materialId": "import-1766506019908-42",
+        "date": "2025-12-23",
+        "yesterdayStock": 2220,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 2220
+      },
+      {
+        "id": "rec-import-1766506019908-43-2025-12-23",
+        "materialId": "import-1766506019908-43",
+        "date": "2025-12-23",
+        "yesterdayStock": 102,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 5,
+        "currentStock": 97
+      },
+      {
+        "id": "rec-import-1766506019908-44-2025-12-23",
+        "materialId": "import-1766506019908-44",
+        "date": "2025-12-23",
+        "yesterdayStock": 867,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 39,
+        "currentStock": 828
+      },
+      {
+        "id": "rec-import-1766506019908-45-2025-12-23",
+        "materialId": "import-1766506019908-45",
+        "date": "2025-12-23",
+        "yesterdayStock": 2,
+        "todayIn": 4,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 6
+      },
+      {
+        "id": "rec-import-1766506019908-46-2025-12-23",
+        "materialId": "import-1766506019908-46",
+        "date": "2025-12-23",
+        "yesterdayStock": 8,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 8
+      },
+      {
+        "id": "rec-import-1766506019908-47-2025-12-23",
+        "materialId": "import-1766506019908-47",
+        "date": "2025-12-23",
+        "yesterdayStock": 102,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 4,
+        "currentStock": 98
+      },
+      {
+        "id": "rec-import-1766506019908-48-2025-12-23",
+        "materialId": "import-1766506019908-48",
+        "date": "2025-12-23",
+        "yesterdayStock": 9,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 9
+      },
+      {
+        "id": "rec-import-1766506019908-49-2025-12-23",
+        "materialId": "import-1766506019908-49",
+        "date": "2025-12-23",
+        "yesterdayStock": 1694,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 91,
+        "currentStock": 1603
+      },
+      {
+        "id": "rec-import-1766506019908-50-2025-12-23",
+        "materialId": "import-1766506019908-50",
+        "date": "2025-12-23",
+        "yesterdayStock": 84,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 5,
+        "currentStock": 79
+      },
+      {
+        "id": "rec-import-1766506019908-51-2025-12-23",
+        "materialId": "import-1766506019908-51",
+        "date": "2025-12-23",
+        "yesterdayStock": 34,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 34
+      },
+      {
+        "id": "rec-import-1766506019908-52-2025-12-23",
+        "materialId": "import-1766506019908-52",
+        "date": "2025-12-23",
+        "yesterdayStock": 375,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 2,
+        "currentStock": 373
+      },
+      {
+        "id": "rec-import-1766506019908-53-2025-12-23",
+        "materialId": "import-1766506019908-53",
+        "date": "2025-12-23",
+        "yesterdayStock": 25,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 25
+      },
+      {
+        "id": "rec-import-1766506019908-54-2025-12-23",
+        "materialId": "import-1766506019908-54",
+        "date": "2025-12-23",
+        "yesterdayStock": 136,
+        "todayIn": 0,
+        "workshopOut": 6,
+        "storeOut": 0,
+        "currentStock": 130
+      },
+      {
+        "id": "rec-import-1766506019908-55-2025-12-23",
+        "materialId": "import-1766506019908-55",
+        "date": "2025-12-23",
+        "yesterdayStock": 315,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 16,
+        "currentStock": 299
+      },
+      {
+        "id": "rec-import-1766506019908-56-2025-12-23",
+        "materialId": "import-1766506019908-56",
+        "date": "2025-12-23",
+        "yesterdayStock": 596,
+        "todayIn": 720,
+        "workshopOut": 0,
+        "storeOut": 41,
+        "currentStock": 1275
+      },
+      {
+        "id": "rec-import-1766506019908-57-2025-12-23",
+        "materialId": "import-1766506019908-57",
+        "date": "2025-12-23",
+        "yesterdayStock": 41,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 6,
+        "currentStock": 35
+      },
+      {
+        "id": "rec-import-1766506019908-58-2025-12-23",
+        "materialId": "import-1766506019908-58",
+        "date": "2025-12-23",
+        "yesterdayStock": 342,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 10,
+        "currentStock": 332
+      },
+      {
+        "id": "rec-import-1766506019908-59-2025-12-23",
+        "materialId": "import-1766506019908-59",
+        "date": "2025-12-23",
+        "yesterdayStock": 32,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 2,
+        "currentStock": 30
+      },
+      {
+        "id": "rec-import-1766506019908-60-2025-12-23",
+        "materialId": "import-1766506019908-60",
+        "date": "2025-12-23",
+        "yesterdayStock": 80,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 2,
+        "currentStock": 78
+      },
+      {
+        "id": "rec-import-1766506019908-61-2025-12-23",
+        "materialId": "import-1766506019908-61",
+        "date": "2025-12-23",
+        "yesterdayStock": 19,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 1,
+        "currentStock": 18
+      },
+      {
+        "id": "rec-import-1766506019908-62-2025-12-23",
+        "materialId": "import-1766506019908-62",
+        "date": "2025-12-23",
+        "yesterdayStock": 3,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 1,
+        "currentStock": 2
+      },
+      {
+        "id": "rec-import-1766506019908-63-2025-12-23",
+        "materialId": "import-1766506019908-63",
+        "date": "2025-12-23",
+        "yesterdayStock": 1,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 1
+      },
+      {
+        "id": "rec-import-1766506019908-64-2025-12-23",
+        "materialId": "import-1766506019908-64",
+        "date": "2025-12-23",
+        "yesterdayStock": 67,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 7,
+        "currentStock": 60
+      },
+      {
+        "id": "rec-import-1766506019908-65-2025-12-23",
+        "materialId": "import-1766506019908-65",
+        "date": "2025-12-23",
+        "yesterdayStock": 561,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 53,
+        "currentStock": 508
+      },
+      {
+        "id": "rec-import-1766506019908-66-2025-12-23",
+        "materialId": "import-1766506019908-66",
+        "date": "2025-12-23",
+        "yesterdayStock": 18,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 18
+      },
+      {
+        "id": "rec-import-1766506019908-67-2025-12-23",
+        "materialId": "import-1766506019908-67",
+        "date": "2025-12-23",
+        "yesterdayStock": 1,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 1
+      },
+      {
+        "id": "rec-import-1766506019908-68-2025-12-23",
+        "materialId": "import-1766506019908-68",
+        "date": "2025-12-23",
+        "yesterdayStock": 565,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 12,
+        "currentStock": 553
+      },
+      {
+        "id": "rec-import-1766506019908-69-2025-12-23",
+        "materialId": "import-1766506019908-69",
+        "date": "2025-12-23",
+        "yesterdayStock": 4,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 4
+      },
+      {
+        "id": "rec-import-1766506019908-70-2025-12-23",
+        "materialId": "import-1766506019908-70",
+        "date": "2025-12-23",
+        "yesterdayStock": 4,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 4
+      },
+      {
+        "id": "rec-import-1766506019908-71-2025-12-23",
+        "materialId": "import-1766506019908-71",
+        "date": "2025-12-23",
+        "yesterdayStock": 11,
+        "todayIn": 0,
+        "workshopOut": 1,
+        "storeOut": 0,
+        "currentStock": 10
+      },
+      {
+        "id": "rec-import-1766506019908-72-2025-12-23",
+        "materialId": "import-1766506019908-72",
+        "date": "2025-12-23",
+        "yesterdayStock": 20,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 2,
+        "currentStock": 18
+      },
+      {
+        "id": "rec-import-1766506019908-73-2025-12-23",
+        "materialId": "import-1766506019908-73",
+        "date": "2025-12-23",
+        "yesterdayStock": 139,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 139
+      },
+      {
+        "id": "rec-import-1766506019908-74-2025-12-23",
+        "materialId": "import-1766506019908-74",
+        "date": "2025-12-23",
+        "yesterdayStock": 1,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 1
+      },
+      {
+        "id": "rec-import-1766506019908-75-2025-12-23",
+        "materialId": "import-1766506019908-75",
+        "date": "2025-12-23",
+        "yesterdayStock": 1,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 1
+      },
+      {
+        "id": "rec-import-1766506019908-76-2025-12-23",
+        "materialId": "import-1766506019908-76",
+        "date": "2025-12-23",
+        "yesterdayStock": 1865,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 119,
+        "currentStock": 1746
+      },
+      {
+        "id": "rec-import-1766506019908-77-2025-12-23",
+        "materialId": "import-1766506019908-77",
+        "date": "2025-12-23",
+        "yesterdayStock": 40,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 40
+      },
+      {
+        "id": "rec-import-1766506019908-0-2025-12-24",
+        "materialId": "import-1766506019908-0",
+        "date": "2025-12-24",
+        "yesterdayStock": 9508,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 9508
+      },
+      {
+        "id": "rec-import-1766506019908-1-2025-12-24",
+        "materialId": "import-1766506019908-1",
+        "date": "2025-12-24",
+        "yesterdayStock": 19,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 19
+      },
+      {
+        "id": "rec-import-1766506019908-2-2025-12-24",
+        "materialId": "import-1766506019908-2",
+        "date": "2025-12-24",
+        "yesterdayStock": 32,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 32
+      },
+      {
+        "id": "rec-import-1766506019908-3-2025-12-24",
+        "materialId": "import-1766506019908-3",
+        "date": "2025-12-24",
+        "yesterdayStock": 139,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 139
+      },
+      {
+        "id": "rec-import-1766506019908-4-2025-12-24",
+        "materialId": "import-1766506019908-4",
+        "date": "2025-12-24",
+        "yesterdayStock": 38,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 38
+      },
+      {
+        "id": "rec-import-1766506019908-5-2025-12-24",
+        "materialId": "import-1766506019908-5",
+        "date": "2025-12-24",
+        "yesterdayStock": 16,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 16
+      },
+      {
+        "id": "rec-import-1766506019908-6-2025-12-24",
+        "materialId": "import-1766506019908-6",
+        "date": "2025-12-24",
+        "yesterdayStock": 24,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 24
+      },
+      {
+        "id": "rec-import-1766506019908-7-2025-12-24",
+        "materialId": "import-1766506019908-7",
+        "date": "2025-12-24",
+        "yesterdayStock": 16,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 16
+      },
+      {
+        "id": "rec-import-1766506019908-8-2025-12-24",
+        "materialId": "import-1766506019908-8",
+        "date": "2025-12-24",
+        "yesterdayStock": 41,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 41
+      },
+      {
+        "id": "rec-import-1766506019908-9-2025-12-24",
+        "materialId": "import-1766506019908-9",
+        "date": "2025-12-24",
+        "yesterdayStock": 21,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 21
+      },
+      {
+        "id": "rec-import-1766506019908-10-2025-12-24",
+        "materialId": "import-1766506019908-10",
+        "date": "2025-12-24",
+        "yesterdayStock": 98,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 98
+      },
+      {
+        "id": "rec-import-1766506019908-11-2025-12-24",
+        "materialId": "import-1766506019908-11",
+        "date": "2025-12-24",
+        "yesterdayStock": 39,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 39
+      },
+      {
+        "id": "rec-import-1766506019908-12-2025-12-24",
+        "materialId": "import-1766506019908-12",
+        "date": "2025-12-24",
+        "yesterdayStock": 28920,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 28920
+      },
+      {
+        "id": "rec-import-1766506019908-13-2025-12-24",
+        "materialId": "import-1766506019908-13",
+        "date": "2025-12-24",
+        "yesterdayStock": 35,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 35
+      },
+      {
+        "id": "rec-import-1766506019908-14-2025-12-24",
+        "materialId": "import-1766506019908-14",
+        "date": "2025-12-24",
+        "yesterdayStock": 363,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 363
+      },
+      {
+        "id": "rec-import-1766506019908-15-2025-12-24",
+        "materialId": "import-1766506019908-15",
+        "date": "2025-12-24",
+        "yesterdayStock": 486,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 486
+      },
+      {
+        "id": "rec-import-1766506019908-16-2025-12-24",
+        "materialId": "import-1766506019908-16",
+        "date": "2025-12-24",
+        "yesterdayStock": 2,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 2
+      },
+      {
+        "id": "rec-import-1766506019908-17-2025-12-24",
+        "materialId": "import-1766506019908-17",
+        "date": "2025-12-24",
+        "yesterdayStock": 1600,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 1600
+      },
+      {
+        "id": "rec-import-1766506019908-18-2025-12-24",
+        "materialId": "import-1766506019908-18",
+        "date": "2025-12-24",
+        "yesterdayStock": 607,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 607
+      },
+      {
+        "id": "rec-import-1766506019908-19-2025-12-24",
+        "materialId": "import-1766506019908-19",
+        "date": "2025-12-24",
+        "yesterdayStock": 2,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 2
+      },
+      {
+        "id": "rec-import-1766506019908-20-2025-12-24",
+        "materialId": "import-1766506019908-20",
+        "date": "2025-12-24",
+        "yesterdayStock": 317,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 317
+      },
+      {
+        "id": "rec-import-1766506019908-21-2025-12-24",
+        "materialId": "import-1766506019908-21",
+        "date": "2025-12-24",
+        "yesterdayStock": 135,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 135
+      },
+      {
+        "id": "rec-import-1766506019908-22-2025-12-24",
+        "materialId": "import-1766506019908-22",
+        "date": "2025-12-24",
+        "yesterdayStock": 411,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 411
+      },
+      {
+        "id": "rec-import-1766506019908-23-2025-12-24",
+        "materialId": "import-1766506019908-23",
+        "date": "2025-12-24",
+        "yesterdayStock": 5,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 5
+      },
+      {
+        "id": "rec-import-1766506019908-24-2025-12-24",
+        "materialId": "import-1766506019908-24",
+        "date": "2025-12-24",
+        "yesterdayStock": 5,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 5
+      },
+      {
+        "id": "rec-import-1766506019908-25-2025-12-24",
+        "materialId": "import-1766506019908-25",
+        "date": "2025-12-24",
+        "yesterdayStock": 12,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 12
+      },
+      {
+        "id": "rec-import-1766506019908-26-2025-12-24",
+        "materialId": "import-1766506019908-26",
+        "date": "2025-12-24",
+        "yesterdayStock": 29,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 29
+      },
+      {
+        "id": "rec-import-1766506019908-27-2025-12-24",
+        "materialId": "import-1766506019908-27",
+        "date": "2025-12-24",
+        "yesterdayStock": 16,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 16
+      },
+      {
+        "id": "rec-import-1766506019908-28-2025-12-24",
+        "materialId": "import-1766506019908-28",
+        "date": "2025-12-24",
+        "yesterdayStock": 32,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 32
+      },
+      {
+        "id": "rec-import-1766506019908-29-2025-12-24",
+        "materialId": "import-1766506019908-29",
+        "date": "2025-12-24",
+        "yesterdayStock": 26,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 26
+      },
+      {
+        "id": "rec-import-1766506019908-30-2025-12-24",
+        "materialId": "import-1766506019908-30",
+        "date": "2025-12-24",
+        "yesterdayStock": 96,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 96
+      },
+      {
+        "id": "rec-import-1766506019908-31-2025-12-24",
+        "materialId": "import-1766506019908-31",
+        "date": "2025-12-24",
+        "yesterdayStock": 350,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 350
+      },
+      {
+        "id": "rec-import-1766506019908-32-2025-12-24",
+        "materialId": "import-1766506019908-32",
+        "date": "2025-12-24",
+        "yesterdayStock": 531,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 531
+      },
+      {
+        "id": "rec-import-1766506019908-33-2025-12-24",
+        "materialId": "import-1766506019908-33",
+        "date": "2025-12-24",
+        "yesterdayStock": 77,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 77
+      },
+      {
+        "id": "rec-import-1766506019908-34-2025-12-24",
+        "materialId": "import-1766506019908-34",
+        "date": "2025-12-24",
+        "yesterdayStock": 76,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 76
+      },
+      {
+        "id": "rec-import-1766506019908-35-2025-12-24",
+        "materialId": "import-1766506019908-35",
+        "date": "2025-12-24",
+        "yesterdayStock": 2,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 2
+      },
+      {
+        "id": "rec-import-1766506019908-36-2025-12-24",
+        "materialId": "import-1766506019908-36",
+        "date": "2025-12-24",
+        "yesterdayStock": 54,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 54
+      },
+      {
+        "id": "rec-import-1766506019908-37-2025-12-24",
+        "materialId": "import-1766506019908-37",
+        "date": "2025-12-24",
+        "yesterdayStock": 3,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 3
+      },
+      {
+        "id": "rec-import-1766506019908-38-2025-12-24",
+        "materialId": "import-1766506019908-38",
+        "date": "2025-12-24",
+        "yesterdayStock": 40,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 40
+      },
+      {
+        "id": "rec-import-1766506019908-39-2025-12-24",
+        "materialId": "import-1766506019908-39",
+        "date": "2025-12-24",
+        "yesterdayStock": 2456,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 2456
+      },
+      {
+        "id": "rec-import-1766506019908-40-2025-12-24",
+        "materialId": "import-1766506019908-40",
+        "date": "2025-12-24",
+        "yesterdayStock": 500,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 500
+      },
+      {
+        "id": "rec-import-1766506019908-41-2025-12-24",
+        "materialId": "import-1766506019908-41",
+        "date": "2025-12-24",
+        "yesterdayStock": 312,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 312
+      },
+      {
+        "id": "rec-import-1766506019908-42-2025-12-24",
+        "materialId": "import-1766506019908-42",
+        "date": "2025-12-24",
+        "yesterdayStock": 2220,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 2220
+      },
+      {
+        "id": "rec-import-1766506019908-43-2025-12-24",
+        "materialId": "import-1766506019908-43",
+        "date": "2025-12-24",
+        "yesterdayStock": 97,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 97
+      },
+      {
+        "id": "rec-import-1766506019908-44-2025-12-24",
+        "materialId": "import-1766506019908-44",
+        "date": "2025-12-24",
+        "yesterdayStock": 828,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 828
+      },
+      {
+        "id": "rec-import-1766506019908-45-2025-12-24",
+        "materialId": "import-1766506019908-45",
+        "date": "2025-12-24",
+        "yesterdayStock": 6,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 6
+      },
+      {
+        "id": "rec-import-1766506019908-46-2025-12-24",
+        "materialId": "import-1766506019908-46",
+        "date": "2025-12-24",
+        "yesterdayStock": 8,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 8
+      },
+      {
+        "id": "rec-import-1766506019908-47-2025-12-24",
+        "materialId": "import-1766506019908-47",
+        "date": "2025-12-24",
+        "yesterdayStock": 98,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 98
+      },
+      {
+        "id": "rec-import-1766506019908-48-2025-12-24",
+        "materialId": "import-1766506019908-48",
+        "date": "2025-12-24",
+        "yesterdayStock": 9,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 9
+      },
+      {
+        "id": "rec-import-1766506019908-49-2025-12-24",
+        "materialId": "import-1766506019908-49",
+        "date": "2025-12-24",
+        "yesterdayStock": 1603,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 1603
+      },
+      {
+        "id": "rec-import-1766506019908-50-2025-12-24",
+        "materialId": "import-1766506019908-50",
+        "date": "2025-12-24",
+        "yesterdayStock": 79,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 79
+      },
+      {
+        "id": "rec-import-1766506019908-51-2025-12-24",
+        "materialId": "import-1766506019908-51",
+        "date": "2025-12-24",
+        "yesterdayStock": 34,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 34
+      },
+      {
+        "id": "rec-import-1766506019908-52-2025-12-24",
+        "materialId": "import-1766506019908-52",
+        "date": "2025-12-24",
+        "yesterdayStock": 373,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 373
+      },
+      {
+        "id": "rec-import-1766506019908-53-2025-12-24",
+        "materialId": "import-1766506019908-53",
+        "date": "2025-12-24",
+        "yesterdayStock": 25,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 25
+      },
+      {
+        "id": "rec-import-1766506019908-54-2025-12-24",
+        "materialId": "import-1766506019908-54",
+        "date": "2025-12-24",
+        "yesterdayStock": 130,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 130
+      },
+      {
+        "id": "rec-import-1766506019908-55-2025-12-24",
+        "materialId": "import-1766506019908-55",
+        "date": "2025-12-24",
+        "yesterdayStock": 299,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 299
+      },
+      {
+        "id": "rec-import-1766506019908-56-2025-12-24",
+        "materialId": "import-1766506019908-56",
+        "date": "2025-12-24",
+        "yesterdayStock": 1275,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 1275
+      },
+      {
+        "id": "rec-import-1766506019908-57-2025-12-24",
+        "materialId": "import-1766506019908-57",
+        "date": "2025-12-24",
+        "yesterdayStock": 35,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 35
+      },
+      {
+        "id": "rec-import-1766506019908-58-2025-12-24",
+        "materialId": "import-1766506019908-58",
+        "date": "2025-12-24",
+        "yesterdayStock": 332,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 332
+      },
+      {
+        "id": "rec-import-1766506019908-59-2025-12-24",
+        "materialId": "import-1766506019908-59",
+        "date": "2025-12-24",
+        "yesterdayStock": 30,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 30
+      },
+      {
+        "id": "rec-import-1766506019908-60-2025-12-24",
+        "materialId": "import-1766506019908-60",
+        "date": "2025-12-24",
+        "yesterdayStock": 78,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 78
+      },
+      {
+        "id": "rec-import-1766506019908-61-2025-12-24",
+        "materialId": "import-1766506019908-61",
+        "date": "2025-12-24",
+        "yesterdayStock": 18,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 18
+      },
+      {
+        "id": "rec-import-1766506019908-62-2025-12-24",
+        "materialId": "import-1766506019908-62",
+        "date": "2025-12-24",
+        "yesterdayStock": 2,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 2
+      },
+      {
+        "id": "rec-import-1766506019908-63-2025-12-24",
+        "materialId": "import-1766506019908-63",
+        "date": "2025-12-24",
+        "yesterdayStock": 1,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 1
+      },
+      {
+        "id": "rec-import-1766506019908-64-2025-12-24",
+        "materialId": "import-1766506019908-64",
+        "date": "2025-12-24",
+        "yesterdayStock": 60,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 60
+      },
+      {
+        "id": "rec-import-1766506019908-65-2025-12-24",
+        "materialId": "import-1766506019908-65",
+        "date": "2025-12-24",
+        "yesterdayStock": 508,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 508
+      },
+      {
+        "id": "rec-import-1766506019908-66-2025-12-24",
+        "materialId": "import-1766506019908-66",
+        "date": "2025-12-24",
+        "yesterdayStock": 18,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 18
+      },
+      {
+        "id": "rec-import-1766506019908-67-2025-12-24",
+        "materialId": "import-1766506019908-67",
+        "date": "2025-12-24",
+        "yesterdayStock": 1,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 1
+      },
+      {
+        "id": "rec-import-1766506019908-68-2025-12-24",
+        "materialId": "import-1766506019908-68",
+        "date": "2025-12-24",
+        "yesterdayStock": 553,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 553
+      },
+      {
+        "id": "rec-import-1766506019908-69-2025-12-24",
+        "materialId": "import-1766506019908-69",
+        "date": "2025-12-24",
+        "yesterdayStock": 4,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 4
+      },
+      {
+        "id": "rec-import-1766506019908-70-2025-12-24",
+        "materialId": "import-1766506019908-70",
+        "date": "2025-12-24",
+        "yesterdayStock": 4,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 4
+      },
+      {
+        "id": "rec-import-1766506019908-71-2025-12-24",
+        "materialId": "import-1766506019908-71",
+        "date": "2025-12-24",
+        "yesterdayStock": 10,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 10
+      },
+      {
+        "id": "rec-import-1766506019908-72-2025-12-24",
+        "materialId": "import-1766506019908-72",
+        "date": "2025-12-24",
+        "yesterdayStock": 18,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 18
+      },
+      {
+        "id": "rec-import-1766506019908-73-2025-12-24",
+        "materialId": "import-1766506019908-73",
+        "date": "2025-12-24",
+        "yesterdayStock": 139,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 139
+      },
+      {
+        "id": "rec-import-1766506019908-74-2025-12-24",
+        "materialId": "import-1766506019908-74",
+        "date": "2025-12-24",
+        "yesterdayStock": 1,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 1
+      },
+      {
+        "id": "rec-import-1766506019908-75-2025-12-24",
+        "materialId": "import-1766506019908-75",
+        "date": "2025-12-24",
+        "yesterdayStock": 1,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 1
+      },
+      {
+        "id": "rec-import-1766506019908-76-2025-12-24",
+        "materialId": "import-1766506019908-76",
+        "date": "2025-12-24",
+        "yesterdayStock": 1746,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 1746
+      },
+      {
+        "id": "rec-import-1766506019908-77-2025-12-24",
+        "materialId": "import-1766506019908-77",
+        "date": "2025-12-24",
+        "yesterdayStock": 40,
+        "todayIn": 0,
+        "workshopOut": 0,
+        "storeOut": 0,
+        "currentStock": 40
+      }
+    ],
+    "audit": [
+      {
+        "id": "ou362xw7b",
+        "timestamp": "2025/12/24 00:20:43",
+        "user": "系统管理员",
+        "action": "更新配置",
+        "details": "更新了系统基础配置信息"
+      },
+      {
+        "id": "ycydxeu9l",
+        "timestamp": "2025/12/24 00:07:53",
+        "user": "系统管理员",
+        "action": "更新配置",
+        "details": "更新了系统基础配置信息"
+      },
+      {
+        "id": "3icujl4z4",
+        "timestamp": "2025/12/24 00:06:59",
+        "user": "系统管理员",
+        "action": "批量导入",
+        "details": "从Excel文件导入了 78 个物料及其库存数据"
+      },
+      {
+        "id": "eo27nflnf",
+        "timestamp": "2025/12/24 00:05:19",
+        "user": "系统管理员",
+        "action": "更新配置",
+        "details": "更新了系统基础配置信息"
+      }
+    ],
+    "config": {
+      "warehouseName": "物料管理系统",
+      "adminName": "我是管理员"
+    }
+  }
+}

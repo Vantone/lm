@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移动端调试工具</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            padding: 20px; 
+            max-width: 600px; 
+            margin: 0 auto;
+            background: #f5f5f5;
+        }
+        .status { 
+            padding: 15px; 
+            margin: 10px 0; 
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            background: white;
+        }
+        .success { background: #d4edda; border-color: #c3e6cb; color: #155724; }
+        .error { background: #f8d7da; border-color: #f5c6cb; color: #721c24; }
+        .warning { background: #fff3cd; border-color: #ffeaa7; color: #856404; }
+        .info { background: #d1ecf1; border-color: #bee5eb; color: #0c5460; }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+        }
+        button:disabled { background: #6c757d; cursor: not-allowed; }
+        .step { margin: 15px 0; padding: 15px; background: white; border-radius: 8px; }
+        .step h3 { margin-top: 0; color: #333; }
+        .log { 
+            background: #f8f9fa; 
+            padding: 10px; 
+            border-radius: 4px; 
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <h1>🔧 移动端调试工具</h1>
+    
+    <div class="step">
+        <h3>环境检测</h3>
+        <button onclick="checkEnvironment()">检测环境</button>
+        <div id="env-info" class="status info hidden"></div>
+    </div>
+
+    <div class="step">
+        <h3>API连接测试</h3>
+        <button onclick="testAllApis()">测试所有API</button>
+        <div id="api-status" class="status info hidden"></div>
+        <div id="api-log" class="log hidden"></div>
+    </div>
+
+    <div class="step">
+        <h3>应用加载测试</h3>
+        <button onclick="testAppLoad()">测试应用加载</button>
+        <div id="app-status" class="status info hidden"></div>
+    </div>
+
+    <div class="step">
+        <h3>控制台日志</h3>
+        <button onclick="showConsoleLogs()">显示日志</button>
+        <button onclick="clearLogs()">清空日志</button>
+        <div id="console-log" class="log hidden"></div>
+    </div>
+
+    <div class="step">
+        <h3>修复建议</h3>
+        <div id="suggestions" class="status warning">
+            点击上方测试按钮开始诊断...
+        </div>
+    </div>
+
+    <script>
+        let logHistory = [];
+
+        // 拦截console.log
+        const originalLog = console.log;
+        const originalError = console.error;
+        const originalWarn = console.warn;
+        
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            logHistory.push({ type: 'log', message: args.join(' '), time: new Date().toISOString() });
+        };
+        
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            logHistory.push({ type: 'error', message: args.join(' '), time: new Date().toISOString() });
+        };
+        
+        console.warn = function(...args) {
+            originalWarn.apply(console, args);
+            logHistory.push({ type: 'warn', message: args.join(' '), time: new Date().toISOString() });
+        };
+
+        function checkEnvironment() {
+            const info = document.getElementById('env-info');
+            info.className = 'status info';
+            info.classList.remove('hidden');
+            
+            const userAgent = navigator.userAgent;
+            const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+            const isIOS = /iPhone|iPad|iPod/i.test(userAgent);
+            const isAndroid = /Android/i.test(userAgent);
+            
+            let envInfo = `
+                <strong>设备类型:</strong> ${isMobile ? '移动设备' : '桌面设备'}<br>
+                <strong>操作系统:</strong> ${isIOS ? 'iOS' : isAndroid ? 'Android' : '其他'}<br>
+                <strong>浏览器:</strong> ${userAgent.split(' ')[0]}<br>
+                <strong>屏幕分辨率:</strong> ${window.screen.width}x${window.screen.height}<br>
+                <strong>视口大小:</strong> ${window.innerWidth}x${window.innerHeight}<br>
+                <strong>当前URL:</strong> ${window.location.href}<br>
+                <strong>主机地址:</strong> ${window.location.hostname}<br>
+                <strong>协议:</strong> ${window.location.protocol}<br>
+                <strong>端口:</strong> ${window.location.port || '默认'}
+            `;
+            
+            // 检查localStorage支持
+            try {
+                localStorage.setItem('test', 'test');
+                localStorage.removeItem('test');
+                envInfo += '<br><strong>localStorage:</strong> ✅ 支持';
+            } catch (e) {
+                envInfo += '<br><strong>localStorage:</strong> ❌ 不支持';
+            }
+            
+            // 检查fetch支持
+            if (typeof fetch !== 'undefined') {
+                envInfo += '<br><strong>fetch API:</strong> ✅ 支持';
+            } else {
+                envInfo += '<br><strong>fetch API:</strong> ❌ 不支持';
+            }
+            
+            info.innerHTML = envInfo;
+        }
+
+        async function testAllApis() {
+            const status = document.getElementById('api-status');
+            const log = document.getElementById('api-log');
+            
+            status.className = 'status info';
+            status.classList.remove('hidden');
+            log.classList.remove('hidden');
+            log.textContent = '';
+            
+            let results = '';
+            let successCount = 0;
+            let totalTests = 0;
+            
+            const hostname = window.location.hostname;
+            const testUrls = [
+                { name: '本地API', url: 'http://localhost:3001/api/data' },
+                { name: 'IP API', url: `http://${hostname}:3001/api/data` },
+                { name: '相对路径API', url: '/api/data' },
+                { name: '登录接口', url: `http://${hostname}:3001/api/login`, method: 'POST', body: { username: 'test', password: 'test' } }
+            ];
+            
+            for (const test of testUrls) {
+                totalTests++;
+                results += `测试 ${test.name}: ${test.url}\n`;
+                
+                try {
+                    const options = {
+                        method: test.method || 'GET',
+                        headers: { 'Content-Type': 'application/json' }
+                    };
+                    
+                    if (test.body) {
+                        options.body = JSON.stringify(test.body);
+                    }
+                    
+                    const response = await fetch(test.url, options);
+                    
+                    if (response.ok) {
+                        const data = await response.json();
+                        results += `✅ 成功 (${response.status}) - 数据大小: ${JSON.stringify(data).length} 字节\n`;
+                        if (data.materials) results += `   物料数: ${data.materials.length}\n`;
+                        if (data.records) results += `   记录数: ${data.records.length}\n`;
+                        successCount++;
+                    } else {
+                        results += `❌ 失败 (${response.status} ${response.statusText})\n`;
+                    }
+                } catch (e) {
+                    results += `❌ 连接失败 - ${e.message}\n`;
+                }
+                results += '\n';
+            }
+            
+            log.textContent = results;
+            
+            status.className = successCount > 0 ? 'status success' : 'status error';
+            status.innerHTML = `
+                <strong>API测试完成</strong><br>
+                成功: ${successCount}/${totalTests}<br>
+                ${successCount > 0 ? '✅ 至少有一个API可用' : '❌ 所有API都不可用'}
+            `;
+            
+            updateSuggestions(successCount > 0);
+        }
+
+        function testAppLoad() {
+            const status = document.getElementById('app-status');
+            status.className = 'status info';
+            status.classList.remove('hidden');
+            
+            // 尝试加载主应用脚本
+            const script = document.createElement('script');
+            script.src = './index.tsx';
+            
+            script.onload = () => {
+                status.className = 'status success';
+                status.innerHTML = '✅ 应用脚本加载成功';
+            };
+            
+            script.onerror = () => {
+                status.className = 'status error';
+                status.innerHTML = '❌ 应用脚本加载失败<br>可能的原因：<br>1. 文件不存在<br>2. 服务器未启动<br>3. 网络问题';
+            };
+            
+            document.head.appendChild(script);
+        }
+
+        function showConsoleLogs() {
+            const log = document.getElementById('console-log');
+            log.classList.remove('hidden');
+            
+            if (logHistory.length === 0) {
+                log.textContent = '暂无日志记录';
+            } else {
+                log.textContent = logHistory
+                    .map(entry => `[${entry.time}] ${entry.type.toUpperCase()}: ${entry.message}`)
+                    .join('\n');
+            }
+        }
+
+        function clearLogs() {
+            logHistory = [];
+            const log = document.getElementById('console-log');
+            log.textContent = '日志已清空';
+        }
+
+        function updateSuggestions(hasWorkingApi) {
+            const suggestions = document.getElementById('suggestions');
+            
+            if (hasWorkingApi) {
+                suggestions.className = 'status success';
+                suggestions.innerHTML = `
+                    <strong>✅ 网络连接正常</strong><br>
+                    如果应用仍然白屏，可能的原因：<br>
+                    1. JavaScript语法错误<br>
+                    2. React组件渲染错误<br>
+                    3. 数据格式问题<br>
+                    <br>
+                    建议：<br>
+                    - 检查浏览器控制台错误<br>
+                    - 尝试清除浏览器缓存<br>
+                    - 确保后端服务器正在运行
+                `;
+            } else {
+                suggestions.className = 'status error';
+                suggestions.innerHTML = `
+                    <strong>❌ 网络连接问题</strong><br>
+                    请按以下步骤解决：<br>
+                    1. <strong>启动后端服务器:</strong> 运行 <code>node server.js</code><br>
+                    2. <strong>启动前端服务器:</strong> 运行 <code>npm run dev</code><br>
+                    3. <strong>检查端口:</strong> 确保3001和5173端口可用<br>
+                    4. <strong>使用IP地址:</strong> 不要用localhost，用电脑IP<br>
+                    5. <strong>同一网络:</strong> 确保手机和电脑在同一WiFi<br>
+                    6. <strong>防火墙:</strong> 允许Node.js访问网络
+                `;
+            }
+        }
+
+        // 自动检测环境
+        window.addEventListener('load', () => {
+            checkEnvironment();
+        });
+
+        // 捕获全局错误
+        window.addEventListener('error', (e) => {
+            logHistory.push({ 
+                type: 'error', 
+                message: `全局错误: ${e.message} at ${e.filename}:${e.lineno}`, 
+                time: new Date().toISOString() 
+            });
+        });
+
+        // 捕获Promise错误
+        window.addEventListener('unhandledrejection', (e) => {
+            logHistory.push({ 
+                type: 'error', 
+                message: `Promise错误: ${e.reason}`, 
+                time: new Date().toISOString() 
+            });
+        });
+    </script>
+</body>
+</html>

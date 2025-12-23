@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>物料管理系统</title>
+    <style>
+      /* 基础抗拉伸设置 */
+      html, body {
+        position: fixed; /* 防止某些环境下的弹性滚动拉伸 */
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        touch-action: none; /* 禁用所有原生触摸行为 */
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        background-color: #f8fafc;
+        color: #0f172a;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #root {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto; /* 允许应用内部滚动，但不允许缩放 */
+        touch-action: pan-y; /* 仅允许垂直平移，禁止缩放 */
+        -webkit-overflow-scrolling: touch;
+      }
+
+      /* 针对 iOS 的补充屏蔽 */
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // 1. 阻止双指缩放 (Pinch to Zoom)
+      document.addEventListener('touchstart', function (event) {
+        if (event.touches.length > 1) {
+          event.preventDefault();
+        }
+      }, { passive: false });
+
+      // 2. 阻止双击缩放 (Double Tap to Zoom)
+      let lastTouchEnd = 0;
+      document.addEventListener('touchend', function (event) {
+        const now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+          event.preventDefault();
+        }
+        lastTouchEnd = now;
+      }, false);
+
+      // 3. 阻止手势缩放
+      document.addEventListener('gesturestart', function (event) {
+        event.preventDefault();
+      });
+    </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

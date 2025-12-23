@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "passwordHash": "e27c906a51760b70a4cac09e3d1c9e75c8735747b084677fd040befa1ffab853",
+      "role": "administrator",
+      "enabled": true
+    }
+  ],
+  "settings": {
+    "encryptionEnabled": false,
+    "sessionTimeout": 7200
+  }
+}

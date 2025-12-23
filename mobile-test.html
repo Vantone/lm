@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移动端连接测试</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            padding: 20px; 
+            max-width: 600px; 
+            margin: 0 auto;
+            background: #f5f5f5;
+        }
+        .status { 
+            padding: 15px; 
+            margin: 10px 0; 
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            background: white;
+        }
+        .success { background: #d4edda; border-color: #c3e6cb; color: #155724; }
+        .error { background: #f8d7da; border-color: #f5c6cb; color: #721c24; }
+        .warning { background: #fff3cd; border-color: #ffeaa7; color: #856404; }
+        .info { background: #d1ecf1; border-color: #bee5eb; color: #0c5460; }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+        }
+        button:disabled { background: #6c757d; cursor: not-allowed; }
+        .step { margin: 15px 0; padding: 15px; background: white; border-radius: 8px; }
+        .step h3 { margin-top: 0; color: #333; }
+        code { 
+            background: #f8f9fa; 
+            padding: 2px 6px; 
+            border-radius: 3px; 
+            font-family: 'Monaco', 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔧 移动端连接诊断工具</h1>
+    
+    <div class="step">
+        <h3>步骤1: 网络信息</h3>
+        <div id="network-info" class="status info">
+            正在检测网络信息...
+        </div>
+    </div>
+
+    <div class="step">
+        <h3>步骤2: 连接测试</h3>
+        <button onclick="testConnection()">测试后端连接</button>
+        <button onclick="testAllEndpoints()">测试所有API端点</button>
+        <div id="connection-status" class="status info">
+            点击按钮开始测试
+        </div>
+    </div>
+
+    <div class="step">
+        <h3>步骤3: 推荐解决方案</h3>
+        <div id="solutions" class="status warning">
+            请先完成连接测试
+        </div>
+    </div>
+
+    <div class="step">
+        <h3>步骤4: 手动访问测试</h3>
+        <p>请手动测试以下地址：</p>
+        <ul>
+            <li><code id="test-url-1">http://localhost:3001/api/data</code></li>
+            <li><code id="test-url-2">http://[你的IP]:3001/api/data</code></li>
+            <li><code id="test-url-3">http://localhost:5173</code></li>
+        </ul>
+    </div>
+
+    <script>
+        // 显示网络信息
+        function showNetworkInfo() {
+            const info = document.getElementById('network-info');
+            const userAgent = navigator.userAgent;
+            const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+            
+            info.innerHTML = `
+                <strong>设备类型:</strong> ${isMobile ? '移动设备' : '桌面设备'}<br>
+                <strong>浏览器:</strong> ${userAgent.split(' ')[0]}<br>
+                <strong>当前URL:</strong> ${window.location.href}<br>
+                <strong>主机地址:</strong> ${window.location.hostname}<br>
+                <strong>端口:</strong> ${window.location.port || '默认'}
+            `;
+        }
+
+        // 测试连接
+        async function testConnection() {
+            const status = document.getElementById('connection-status');
+            status.className = 'status info';
+            status.innerHTML = '正在测试连接...';
+
+            // 尝试多个可能的API地址
+            const testUrls = [
+                `${window.location.protocol}//${window.location.hostname}:3001/api/data`,
+                'http://localhost:3001/api/data',
+                '/api/data'
+            ];
+
+            let connected = false;
+            let workingUrl = '';
+
+            for (const url of testUrls) {
+                try {
+                    const response = await fetch(url, { 
+                        method: 'GET',
+                        mode: 'cors',
+                        cache: 'no-cache'
+                    });
+                    
+                    if (response.ok) {
+                        const data = await response.json();
+                        connected = true;
+                        workingUrl = url;
+                        status.className = 'status success';
+                        status.innerHTML = `
+                            <strong>✅ 连接成功!</strong><br>
+                            工作地址: <code>${url}</code><br>
+                            数据概览: 物料${data.materials?.length || 0}个, 记录${data.records?.length || 0}条
+                        `;
+                        break;
+                    }
+                } catch (e) {
+                    console.log(`测试 ${url} 失败:`, e.message);
+                }
+            }
+
+            if (!connected) {
+                status.className = 'status error';
+                status.innerHTML = `
+                    <strong>❌ 所有连接测试失败</strong><br>
+                    请检查：<br>
+                    1. 后端服务器是否启动<br>
+                    2. 防火墙设置<br>
+                    3. 网络连接<br>
+                    4. CORS配置
+                `;
+            }
+
+            updateSolutions(connected, workingUrl);
+        }
+
+        // 测试所有API端点
+        async function testAllEndpoints() {
+            const status = document.getElementById('connection-status');
+            status.className = 'status info';
+            status.innerHTML = '正在测试所有API端点...';
+
+            const baseUrl = `${window.location.protocol}//${window.location.hostname}:3001`;
+            const endpoints = ['/api/data', '/api/login'];
+
+            let results = '';
+
+            for (const endpoint of endpoints) {
+                try {
+                    const response = await fetch(baseUrl + endpoint, { 
+                        method: endpoint === '/api/login' ? 'POST' : 'GET',
+                        mode: 'cors',
+                        cache: 'no-cache',
+                        headers: endpoint === '/api/login' ? 
+                            { 'Content-Type': 'application/json' } : {},
+                        body: endpoint === '/api/login' ? 
+                            JSON.stringify({ username: 'test', password: 'test' }) : undefined
+                    });
+                    
+                    results += `${endpoint}: ${response.status} ${response.statusText}<br>`;
+                } catch (e) {
+                    results += `${endpoint}: 连接失败 - ${e.message}<br>`;
+                }
+            }
+
+            status.className = 'status info';
+            status.innerHTML = `<strong>API端点测试结果:</strong><br>${results}`;
+        }
+
+        // 更新解决方案
+        function updateSolutions(connected, workingUrl) {
+            const solutions = document.getElementById('solutions');
+            
+            if (connected) {
+                solutions.className = 'status success';
+                solutions.innerHTML = `
+                    <strong>✅ 连接正常!</strong><br>
+                    工作地址: <code>${workingUrl}</code><br>
+                    如果主应用仍有问题，请检查：<br>
+                    1. 前端是否正确加载<br>
+                    2. JavaScript控制台是否有错误<br>
+                    3. localStorage是否被禁用
+                `;
+            } else {
+                solutions.className = 'status error';
+                solutions.innerHTML = `
+                    <strong>🔧 推荐解决方案:</strong><br>
+                    1. <strong>启动后端:</strong> 在电脑上运行 <code>node server.js</code><br>
+                    2. <strong>检查防火墙:</strong> 允许3001和5173端口<br>
+                    3. <strong>使用IP访问:</strong> 不要用localhost，用电脑的IP地址<br>
+                    4. <strong>同一网络:</strong> 确保手机和电脑连接同一WiFi<br>
+                    5. <strong>重启应用:</strong> 完全关闭浏览器后重新打开<br>
+                    <br>
+                    <strong>获取IP地址命令:</strong><br>
+                    Windows: <code>ipconfig</code><br>
+                    Mac: <code>ifconfig</code>
+                `;
+            }
+        }
+
+        // 初始化
+        showNetworkInfo();
+        
+        // 更新测试URL显示
+        const hostname = window.location.hostname;
+        document.getElementById('test-url-2').textContent = 
+            `http://${hostname}:3001/api/data`;
+    </script>
+</body>
+</html>
