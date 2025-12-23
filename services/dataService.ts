@@ -22,6 +22,12 @@ const getApiBase = () => {
     const hostname = window.location.hostname;
     const port = window.location.port;
     
+    // 检测是否在Cloudflare Pages等静态托管环境
+    if (hostname.includes('pages.dev') || hostname.includes('cloudflare')) {
+      console.log('检测到Cloudflare Pages环境，跳过服务器连接');
+      return null;
+    }
+    
     // 如果是localhost访问，使用localhost
     if (hostname === 'localhost' || hostname === '127.0.0.1') {
       return 'http://localhost:3001/api';
@@ -59,14 +65,33 @@ export const dataService = {
       });
     }
     
+    // 检查是否在静态托管环境
+    const apiBase = getApiBase();
+    if (!apiBase) {
+      console.log('静态托管环境检测：跳过服务器连接，使用本地数据');
+      
+      // 如果没有任何数据，初始化示例数据
+      if (!hasLocalData) {
+        console.log('初始化示例数据');
+        localStorage.setItem(KEYS.MATERIALS, JSON.stringify([]));
+        localStorage.setItem(KEYS.RECORDS, JSON.stringify([]));
+        localStorage.setItem(KEYS.AUDIT, JSON.stringify([]));
+        localStorage.setItem(KEYS.CONFIG, JSON.stringify({
+          warehouseName: '中心仓库 A-01',
+          adminName: '管理员',
+          lastBackup: new Date().toISOString().split('T')[0]
+        }));
+      }
+      return false;
+    }
+    
     // 尝试连接服务器，增加超时和重试机制
     try {
-      const apiBase = getApiBase();
       console.log('尝试连接服务器:', apiBase);
       
       // 设置请求超时
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 5000); // 5秒超时
+      const timeoutId = setTimeout(() => controller.abort(), 3000); // 3秒超时
       
       const response = await fetch(`${apiBase}/data`, {
         signal: controller.signal,
@@ -117,13 +142,24 @@ export const dataService = {
       console.log('未检测到任何现有数据，系统将保持空白状态');
       localStorage.setItem(KEYS.MATERIALS, JSON.stringify([]));
       localStorage.setItem(KEYS.RECORDS, JSON.stringify([]));
-      return false;
+      localStorage.setItem(KEYS.AUDIT, JSON.stringify([]));
+      localStorage.setItem(KEYS.CONFIG, JSON.stringify({
+        warehouseName: '中心仓库 A-01',
+        adminName: '管理员',
+        lastBackup: new Date().toISOString().split('T')[0]
+      }));
     }
     
     return hasRemoteData;
   },
 
   pushToServer: async () => {
+    const apiBase = getApiBase();
+    if (!apiBase) {
+      console.log('静态托管环境：数据仅保存在本地存储中');
+      return true;
+    }
+    
     const fullData = {
       materials: dataService.getMaterials(),
       records: dataService.getRecords(),
@@ -131,7 +167,6 @@ export const dataService = {
       config: dataService.getConfig()
     };
     try {
-      const apiBase = getApiBase();
       const response = await fetch(`${apiBase}/data`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -151,12 +186,30 @@ export const dataService = {
 
   // --- 鉴权服务 (更新为对接后端接口) ---
   login: async (username: string, password: string, encrypted: boolean = false): Promise<boolean> => {
+    const apiBase = getApiBase();
+    
+    // 检查是否在静态托管环境或无后端环境
+    if (!apiBase) {
+      console.log('静态托管环境：使用本地身份验证');
+      // 简化的本地验证
+      if (username === 'admin' && password === '123456') {
+        const session: UserSession = {
+          isLoggedIn: true,
+          username: '管理员',
+          loginTime: new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })
+        };
+        localStorage.setItem(KEYS.SESSION, JSON.stringify(session));
+        console.log('[DATA_SERVICE] 本地登录成功');
+        return true;
+      }
+      return false;
+    }
+    
     try {
       // 设置请求超时
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 5000); // 5秒超时
+      const timeoutId = setTimeout(() => controller.abort(), 3000); // 3秒超时
       
-      const apiBase = getApiBase();
       const requestBody: any = { username, password };
       
       // 如果密码已加密，添加标记
@@ -186,21 +239,20 @@ export const dataService = {
       }
     } catch (e) {
       if (e.name === 'AbortError') {
-        console.warn('登录请求超时');
+        console.warn('登录请求超时，尝试本地验证');
       } else {
         console.warn('登录失败，尝试本地验证:', e);
       }
       
-      // 如果后端没开或网络问题，尝试本地回退（仅限演示环境，生产环境应严格要求后端）
-      // 注意：本地验证不使用加密密码
-      const clearPassword = encrypted ? await require('../utils/crypto').CryptoUtil.hashPassword('123456') : password;
-      if (username === 'admin' && (encrypted ? password === clearPassword : password === '123456')) {
+      // 如果后端没开或网络问题，尝试本地回退
+      if (username === 'admin' && password === '123456') {
         const session: UserSession = {
           isLoggedIn: true,
           username: '本地管理员(离线)',
           loginTime: new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })
         };
         localStorage.setItem(KEYS.SESSION, JSON.stringify(session));
+        console.log('[DATA_SERVICE] 本地登录成功');
         return true;
       }
     }
@@ -470,10 +522,15 @@ export const dataService = {
 
   resetAll: () => {
     localStorage.clear();
-    fetch(`${getApiBase()}/data`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ materials: [], records: [], audit: [], config: {} })
-    }).then(() => window.location.reload());
+    const apiBase = getApiBase();
+    if (apiBase) {
+      fetch(`${apiBase}/data`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ materials: [], records: [], audit: [], config: {} })
+      }).then(() => window.location.reload()).catch(() => window.location.reload());
+    } else {
+      window.location.reload();
+    }
   }
 };
